@@ -1,0 +1,56 @@
+.irs--flat
+  width: 360px
+  max-width: 100%
+.irs--flat .irs-line
+  background-image: url('../img/range-bg.png')
+  height: 10px
+.irs--flat .irs-bar
+  background: none
+.irs--flat .irs-handle
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='25px' height='25px'%3E%3Cpath fill-rule='evenodd' stroke-width='3px' stroke='rgb(255, 255, 255)' fill='rgb(0, 0, 0)' d='M12.500,6.500 C15.814,6.500 18.500,9.186 18.500,12.500 C18.500,15.813 15.814,18.500 12.500,18.500 C9.186,18.500 6.500,15.813 6.500,12.500 C6.500,9.186 9.186,6.500 12.500,6.500 Z'/%3E%3C/svg%3E")
+  top: 17px
+  height: 25px
+  width: 25px
+.irs--flat .irs-handle>i:first-child, .irs--flat .irs-handle.state_hover>i:first-child, .irs--flat .irs-handle:hover>i:first-child
+  background: none
+.irs--flat .irs-from, .irs--flat .irs-to, .irs--flat .irs-single
+  background-color: $brown
+  color: $white
+  font-size: 12px
+  font-family: $regular, serif
+  padding: 5px
+  top: -10px
+  -webkit-border-radius: 50px
+  -moz-border-radius: 50px
+  border-radius: 50px
+.irs--flat .irs-from:before, .irs--flat .irs-to:before, .irs--flat .irs-single:before
+  border-top-color: $brown
+.irs--flat .irs-min, .irs--flat .irs-max
+  display: none
+.range
+  &__data
+    width: 135px
+    max-width: 100%
+    -webkit-border-radius: 50px
+    -moz-border-radius: 50px
+    border-radius: 50px
+    border: 2px solid #ebebeb
+    height: 40px
+    padding-left: 20px
+    box-sizing: border-box
+    margin: 0 10px
+    &::placeholder
+      font-size: 15px
+      font-family: $regular, serif
+      color: #918e8e
+    &:focus, &:active
+      outline: none
+      border: 2px solid #ebebeb
+    &_wr
+      margin-top: 20px
+      max-width: 100%
+      display: flex
+      justify-content: flex-end
+      align-items: center
+
+

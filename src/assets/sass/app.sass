@@ -1,0 +1,766 @@
+//utils
+@import 'utils/libs.sass'
+@import 'utils/font.sass'
+
+//components
+@import 'components/constants.sass'
+@import 'components/forms.sass'
+@import 'components/buttons.sass'
+@import 'components/sliders.sass'
+@import 'components/range.sass'
+
+//default
+.container
+  width: 1200px
+  max-width: 100%
+  margin: 0 auto
+
+body
+  font-size: 16px
+  color: $black1
+  font-family: $light, serif
+  background-color: $white
+  line-height: 1
+ul
+  list-style: none
+  margin: 0
+  padding: 0
+ol
+  margin: 0
+  padding: 0
+p
+  margin: 0
+b
+  font-family: $bold, serif
+img
+  max-width: 100%
+a
+  color: inherit
+  &:hover
+    color: inherit
+    text-decoration: none
+.svg-icons
+  display: none
+.title
+  text-transform: uppercase
+  font-size: 50px
+  margin-bottom: 60px
+  span
+    font-family: $semibold, serif
+.subtitle
+  font-size: 25px
+  font-family: $semibold, serif
+.left-line
+  position: relative
+  &:before
+    content: ''
+    display: block
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='30px' height='3px'%3E%3Cpath fill-rule='evenodd' fill='rgb(0, 166, 81)' d='M-0.000,-0.000 L30.000,-0.000 L30.000,3.000 L-0.000,3.000 L-0.000,-0.000 Z'/%3E%3C/svg%3E")
+    width: 30px
+    height: 3px
+    position: absolute
+    left: 0
+    top: 10px
+.right-line
+  position: relative
+  &:after
+    content: ''
+    display: block
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='30px' height='3px'%3E%3Cpath fill-rule='evenodd' fill='rgb(0, 166, 81)' d='M-0.000,-0.000 L30.000,-0.000 L30.000,3.000 L-0.000,3.000 L-0.000,-0.000 Z'/%3E%3C/svg%3E")
+    width: 30px
+    height: 3px
+    position: absolute
+    right: 0
+    top: 10px
+//header
+.header
+  &__item
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    height: 50px
+  &__phone
+    font-size: 25px
+    color: $black
+    font-family: $bold, serif
+  &__link
+    color: $green
+    font-family: $regular, serif
+    text-decoration: underline
+    &:hover
+      text-decoration: none
+      color: $green
+  &__contacts
+    font-family: $regular, serif
+    position: relative
+    padding-left: 20px
+    &:before
+      content: ''
+      position: absolute
+      left: 0
+      top: 0
+      background-repeat: no-repeat
+    &_adress
+      &:before
+        background-image: url("../img/icon-adr.png")
+        width: 10px
+        height: 16px
+    &_email
+      &:before
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='12' viewBox='0 0 16 12'%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B fill: %23269b39; fill-rule: evenodd; %7D %3C/style%3E%3C/defs%3E%3Cpath id='Forma_1_copy_15' data-name='Forma 1 copy 15' class='cls-1' d='M478.536,90.7q0.3,0.2,1.83,1.215t2.339,1.556c0.06,0.04.186,0.126,0.38,0.26s0.354,0.242.482,0.324,0.283,0.175.464,0.277a2.806,2.806,0,0,0,.513.23,1.479,1.479,0,0,0,.447.077h0.018a1.468,1.468,0,0,0,.446-0.077,2.784,2.784,0,0,0,.514-0.23q0.272-.154.464-0.277t0.482-.324c0.194-.134.32-0.22,0.38-0.26l4.178-2.77a4.135,4.135,0,0,0,1.089-1.049A2.182,2.182,0,0,0,493,88.362a1.277,1.277,0,0,0-.424-0.963,1.413,1.413,0,0,0-1-.4H478.428a1.3,1.3,0,0,0-1.058.443A1.67,1.67,0,0,0,477,88.55a1.943,1.943,0,0,0,.491,1.164A4.334,4.334,0,0,0,478.536,90.7Zm13.571,0.912q-2.928,1.893-4.446,2.941-0.51.358-.826,0.558a5.229,5.229,0,0,1-.844.409,2.674,2.674,0,0,1-.982.209h-0.018a2.674,2.674,0,0,1-.982-0.209,5.188,5.188,0,0,1-.844-0.409q-0.317-.2-0.826-0.558-1.2-.844-4.437-2.941a4.664,4.664,0,0,1-.9-0.742v6.768a1.284,1.284,0,0,0,.42.963,1.407,1.407,0,0,0,1.009.4h13.142a1.407,1.407,0,0,0,1.009-.4,1.284,1.284,0,0,0,.42-0.963V90.869A4.871,4.871,0,0,1,492.107,91.61Z' transform='translate(-477 -87)'/%3E%3C/svg%3E%0A")
+        width: 16px
+        height: 12px
+  &__button
+    height: 50px
+    &_count
+      width: 255px
+    &_calc
+      width: 173px
+
+
+//nav
+.nav
+  background-color: $green
+  height: 60px
+  &__search
+    height: 100%
+    background-color: $brown
+    display: flex
+    align-items: center
+    padding: 0 22px
+    margin-right: 35px
+  &__wrapper
+    display: flex
+    justify-content: space-between
+    align-items: center
+    height: 100%
+    width: 100%
+  &__item
+    height: 100%
+  &__link
+    color: $white
+    text-transform: uppercase
+    font-family: $semibold, serif
+    display: block
+    font-size: 13px
+    height: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    transition: $trans
+    padding: 0 10px
+    &:hover
+      background-color: $brown
+      color: $black1
+
+//banner
+.banner
+  background-image: url('../img/banner.png')
+  -webkit-background-size: cover
+  background-size: cover
+  height: 627px
+  &__wrapper
+    position: relative
+    height: 100%
+  &__link
+    font-size: 13px
+    color: $white
+    font-family: $regular, serif
+    background-color: $green
+    -webkit-border-radius: 50px
+    -moz-border-radius: 50px
+    border-radius: 50px
+    display: flex
+    justify-content: center
+    align-items: center
+    height: 28px
+    padding: 0 15px
+    transition: $trans
+    opacity: 0
+    &:before
+      content: ''
+      position: absolute
+      left: 44%
+      bottom: -20px
+      border: 10px solid transparent
+      border-top: 10px solid $green
+  &__dot
+    position: absolute
+    &:hover .banner__link
+      opacity: 1
+      transform: translate(-60px, -60px)
+    &_one
+      bottom: 50px
+      right: 20px
+    &_two
+      bottom: 160px
+      right: 45%
+
+//service
+.service
+  position: relative
+  padding-top: 100px
+  padding-bottom: 100px
+  &:before
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    background-image: url('../img/service-bg.png')
+    background-repeat: no-repeat
+    display: block
+    width: 657px
+    height: 528px
+  &__ttl
+    text-transform: uppercase
+    font-size: 26px
+    position: relative
+    padding-left: 50px
+    margin-top: 60px
+  &__item
+    padding-top: 35px
+    padding-left: 35px
+    box-sizing: border-box
+    background-repeat: no-repeat
+    -webkit-background-size: cover
+    background-size: cover
+    margin-bottom: 35px
+    &_02, &_03
+      height: 252px
+    &_01
+      height: 530px
+    &_04, &_05
+      height: 250px
+    &_06, &_07
+      height: 247px
+  &__num
+    color: $green
+    font-family: $semibold, serif
+    font-size: 75px
+    margin-right: 20px
+    display: inline-block
+  &__name
+    text-transform: uppercase
+    font-size: 18px
+    font-family: $regular, serif
+    color: $black
+    display: inline-block
+    span
+      text-transform: none
+      font-size: 12px
+      font-family: $semibold, serif
+      display: block
+      padding-bottom: 5px
+
+//project
+.project
+  padding-bottom: 90px
+  &__btn
+    height: 45px
+    margin-bottom: 60px
+  &__hide
+    opacity: 0
+    position: absolute
+    top: 0
+    left: 0
+    display: flex
+    flex-direction: column
+    justify-content: space-around
+    width: 100%
+    height: 100%
+    background-color: rgba(0,0,0,0.75)
+    transition: $trans
+    padding-left: 100px
+    box-sizing: border-box
+    &.is-active
+      opacity: 1
+    .left-line:before
+      top: 20px
+      left: -60px
+  &__item
+    &_in
+      position: relative
+      transition: $trans
+      color: $white
+      text-transform: uppercase
+      img
+        width: 100%
+  &__name
+    font-size: 40px
+    font-family: $semibold, serif
+    position: relative
+  &__properties
+
+    font-size: 26px
+    span
+      display: block
+      &:not(:last-child)
+        margin-right: 25px
+  &__link
+    font-size: 20px
+    text-decoration: underline
+    display: inline-block
+    &:hover
+      color: $white
+    &:before
+      content: ''
+      display: inline-block
+      vertical-align: bottom
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='35px' height='27px'%3E%3Cpath fill-rule='evenodd' fill='rgb(249, 225, 200)' d='M31.354,26.999 L3.646,26.999 C1.636,26.999 -0.000,25.405 -0.000,23.447 L-0.000,7.815 C-0.000,5.857 1.636,4.262 3.646,4.262 L12.803,4.262 C13.116,4.262 13.395,4.068 13.495,3.776 L14.287,1.456 C14.586,0.585 15.420,-0.000 16.364,-0.000 L24.471,-0.000 C25.413,-0.000 26.247,0.585 26.546,1.456 L27.339,3.776 C27.437,4.068 27.716,4.262 28.031,4.262 L31.354,4.262 C33.364,4.262 35.000,5.857 35.000,7.815 L35.000,23.447 C35.000,25.405 33.364,26.999 31.354,26.999 ZM33.541,23.447 L33.541,7.815 C33.541,6.640 32.560,5.684 31.354,5.684 L28.030,5.684 C27.088,5.684 26.254,5.098 25.955,4.227 L25.162,1.906 C25.063,1.615 24.784,1.420 24.469,1.420 L16.362,1.420 C16.049,1.420 15.770,1.615 15.670,1.906 L14.878,4.227 C14.580,5.098 13.746,5.684 12.803,5.684 L3.646,5.684 C2.440,5.684 1.458,6.640 1.458,7.815 L1.458,23.447 C1.458,24.622 2.440,25.578 3.646,25.578 L31.354,25.578 C32.560,25.578 33.542,24.622 33.542,23.447 L33.541,23.447 ZM20.417,24.157 C15.591,24.157 11.667,20.333 11.667,15.631 C11.667,10.928 15.591,7.104 20.417,7.104 C25.242,7.104 29.167,10.928 29.167,15.631 C29.167,20.333 25.242,24.157 20.417,24.157 ZM20.417,8.525 C16.396,8.525 13.125,11.713 13.125,15.631 C13.125,19.549 16.396,22.736 20.417,22.736 C24.437,22.736 27.708,19.549 27.708,15.631 C27.708,11.713 24.437,8.525 20.417,8.525 ZM20.417,21.315 C17.200,21.315 14.583,18.766 14.583,15.631 C14.583,12.496 17.200,9.947 20.417,9.947 C23.634,9.947 26.250,12.496 26.250,15.631 C26.250,18.766 23.634,21.315 20.417,21.315 ZM20.417,11.368 C18.005,11.368 16.042,13.281 16.042,15.631 C16.042,17.982 18.005,19.894 20.417,19.894 C22.829,19.894 24.792,17.982 24.792,15.631 C24.792,13.281 22.829,11.368 20.417,11.368 ZM6.562,8.525 L3.646,8.525 C3.243,8.525 2.917,8.207 2.917,7.815 C2.917,7.423 3.243,7.104 3.646,7.104 L6.562,7.104 C6.965,7.104 7.292,7.423 7.292,7.815 C7.292,8.207 6.965,8.525 6.562,8.525 ZM6.562,2.841 L3.646,2.841 C3.243,2.841 2.917,2.523 2.917,2.131 C2.917,1.739 3.243,1.420 3.646,1.420 L6.562,1.420 C6.965,1.420 7.292,1.739 7.292,2.131 C7.292,2.523 6.965,2.841 6.562,2.841 Z'/%3E%3C/svg%3E")
+      background-repeat: no-repeat
+      width: 35px
+      height: 27px
+      margin-right: 10px
+
+//leaders
+.leaders
+  padding-bottom: 100px
+  &__btn
+    width: 100px
+    height: 45px
+    border: 0
+    -webkit-border-radius: 50px
+    -moz-border-radius: 50px
+    border-radius: 50px
+    &:not(:last-child)
+      margin-right: 10px
+  &__nav
+    margin-bottom: 50px
+    background-color: transparent
+    border: 0
+  .nav-tabs .nav-link
+    -webkit-border-radius: 50px
+    -moz-border-radius: 50px
+    border-radius: 50px
+    border: 0
+    padding: 0
+  .nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link
+    background-color: $green
+    color: $white
+  &__over
+    position: absolute
+    top: 0
+    left: 0
+    height: 100%
+    width: 100%
+    background-color: rgba(38, 155, 57, 0.8)
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    opacity: 0
+    transition: $trans
+    &_btn
+      border: 1px solid $white
+      height: 45px
+      color: $white
+      width: 150px
+  &__item
+    &:hover  .leaders__over
+      opacity: 1
+    &_in
+      position: relative
+  &__ttl
+    font-size: 20px
+    margin-top: 10px
+    text-align: center
+    line-height: 1.5em
+    span
+      font-family: $bold
+      display: block
+  &__tab-content
+    height: 350px
+
+//stocks
+.stocks
+  padding-bottom: 100px
+  &__wrapper
+    background-color: $green
+    padding: 30px 0
+  &__info
+    display: flex
+    flex-direction: column
+    justify-content: center
+  &__ttl
+    color: $white
+    font-size: 50px
+    font-family: $semibold, serif
+    &.left-line:before
+      left: -50px
+      top: 20px
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='30px' height='3px'%3E%3Cpath fill-rule='evenodd' fill='rgb(255, 255, 255)' d='M-0.000,-0.000 L30.000,-0.000 L30.000,3.000 L-0.000,3.000 L-0.000,-0.000 Z'/%3E%3C/svg%3E")
+  &__subttl
+    color: $white
+    font-size: 20px
+    margin: 30px 0
+  &__btn
+    width: 368px
+    height: 45px
+  &__img
+    position: relative
+    background-image: url('../img/stock-bg.png')
+    background-repeat: no-repeat
+
+//calc
+.calc
+  padding-bottom: 100px
+  &__title
+    text-transform: none
+    font-family: $semibold, serif
+  &__form
+    border: 1px solid #ebebeb
+    -webkit-border-radius: 20px
+    -moz-border-radius: 20px
+    border-radius: 20px
+    -webkit-box-shadow: 0px 2px 20px -8px rgba(0,0,0,0.75)
+    -moz-box-shadow: 0px 2px 20px -8px rgba(0,0,0,0.75)
+    box-shadow: 0px 2px 20px -8px rgba(0,0,0,0.75)
+    padding: 30px 35px
+  &__item
+    padding-bottom: 25px
+    margin-bottom: 30px
+    &:not(:last-child)
+      border-bottom: 1px solid #f5f5f5
+  &__label
+    text-transform: uppercase
+    font-family: $bold, serif
+    font-size: 18px
+  &__btn
+    margin: 0 auto
+    height: 45px
+    width: 240px
+  &__select
+    padding-left: 20px
+    width: 240px
+    height: 50px
+    max-width: 100%
+    -webkit-border-radius: 50px
+    -moz-border-radius: 50px
+    border-radius: 50px
+    background-color: $white
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='12px' height='11px'%3E%3Cpath fill-rule='evenodd' fill='rgb(0, 0, 0)' d='M0.005,5.371 L1.499,4.137 L4.969,7.347 L4.969,-0.005 L7.043,0.018 L7.043,7.396 L10.572,4.159 L11.994,5.461 L6.028,10.996 L0.005,5.371 Z'/%3E%3C/svg%3E")
+    background-repeat: no-repeat
+    background-position: 90% center
+  &__checkbox
+    &:focus, &:active
+      outline: none
+      border: 0
+      box-shadow: none
+  .custom-control-label::before
+    width: 20px
+    height: 20px
+    border: 2px solid #ebebeb
+    top: -2px
+  .custom-control-label::after
+    width: 27px
+    height: 27px
+    top: -5px
+    right: 0
+  .custom-checkbox .custom-control-input:checked ~ .custom-control-label::after
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='16px' height='13px'%3E%3Cpath fill-rule='evenodd' fill='rgb(38, 155, 57)' d='M16.002,2.684 L13.280,-0.009 L5.625,7.793 L2.665,4.808 L0.000,7.470 L5.625,13.007 L16.002,2.684 Z'/%3E%3C/svg%3E")
+  .custom-control-input:checked ~ .custom-control-label::before
+    color: #fff
+    border-color: #ebebeb
+    background-color: $white
+  .custom-control-input:focus ~ .custom-control-label::before, .custom-control-input:active ~ .custom-control-label::before
+    box-shadow: none
+  &__adv
+    display: flex
+    align-items: center
+    justify-content: space-between
+    flex-wrap: wrap
+    &_item
+      display: flex
+      align-items: center
+      width: 48%
+      margin-bottom: 60px
+    &_txt
+      font-family: $regular, serif
+    &_img
+      margin-right: 20px
+
+//map
+.map
+  background-image: url('../img/map.png')
+  -webkit-background-size: cover
+  background-size: cover
+  height: 821px
+  padding-top: 60px
+  box-sizing: border-box
+  position: relative
+  margin-bottom: 150px
+  &__over
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 45%
+    background-color: rgba(255,255,255,0.8)
+  .container
+    z-index: 1
+    position: relative
+  &__left
+    line-height: 24px
+  &__right
+    text-transform: uppercase
+    font-family: $semibold, serif
+    text-align: center
+    display: flex
+    justify-content: space-between
+    align-items: center
+    &:before, &:after
+      content: ''
+      display: block
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='3px' height='76px'%3E%3Cpath fill-rule='evenodd' fill='rgb(0, 166, 81)' d='M-0.000,-0.000 L3.000,-0.000 L3.000,76.000 L-0.000,76.000 L-0.000,-0.000 Z'/%3E%3C/svg%3E")
+      height: 76px
+      width: 3px
+    &:after
+      width: 5px
+  &__bottom
+    background-color: $green
+    -webkit-border-radius: 20px
+    -moz-border-radius: 20px
+    border-radius: 20px
+    padding: 30px 0
+    box-sizing: border-box
+    margin-top: 50px
+  &__item
+    display: flex
+    align-items: center
+    color: $white
+  &__img
+    margin-right: 15px
+  &__txt
+    font-family: $regular, serif
+  &__input
+    width: 350px
+    max-width: 100%
+    height: 40px
+    padding-left: 20px
+    border-radius: 50px
+    border: 0
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='17px' height='17px'%3E%3Cpath fill-rule='evenodd' fill='rgb(0, 0, 0)' d='M16.363,14.623 L13.065,11.324 C13.860,10.177 14.258,8.898 14.258,7.487 C14.258,6.571 14.080,5.694 13.724,4.857 C13.368,4.021 12.887,3.300 12.282,2.694 C11.676,2.088 10.955,1.607 10.118,1.251 C9.281,0.895 8.405,0.717 7.488,0.717 C6.571,0.717 5.695,0.895 4.858,1.251 C4.021,1.607 3.300,2.088 2.694,2.694 C2.088,3.300 1.608,4.021 1.252,4.857 C0.896,5.694 0.718,6.571 0.718,7.487 C0.718,8.404 0.896,9.281 1.252,10.118 C1.608,10.954 2.088,11.675 2.694,12.281 C3.300,12.886 4.021,13.368 4.858,13.724 C5.695,14.079 6.571,14.257 7.488,14.257 C8.899,14.257 10.177,13.859 11.325,13.064 L14.623,16.353 C14.854,16.597 15.142,16.719 15.488,16.719 C15.822,16.719 16.110,16.597 16.354,16.353 C16.597,16.110 16.719,15.821 16.719,15.488 C16.719,15.149 16.601,14.860 16.363,14.623 ZM10.531,10.531 C9.688,11.374 8.674,11.795 7.488,11.795 C6.302,11.795 5.288,11.374 4.444,10.531 C3.601,9.687 3.180,8.673 3.180,7.487 C3.180,6.301 3.602,5.287 4.444,4.444 C5.287,3.600 6.302,3.179 7.488,3.179 C8.674,3.179 9.688,3.601 10.531,4.444 C11.375,5.287 11.796,6.301 11.796,7.487 C11.796,8.673 11.374,9.687 10.531,10.531 Z'/%3E%3C/svg%3E")
+    background-repeat: no-repeat
+    background-position: 90% center
+    &:focus, &:active
+      outline: none
+      border: 0
+    &::placeholder
+      font-size: 15px
+      color: #918e8e
+      font-family: $regular, serif
+
+//about
+.about
+  padding-bottom: 100px
+  .left-line:before
+    top: 25px
+    left: -50px
+  &__text
+    p
+      font-size: 18px
+      line-height: 26px
+    ul
+      margin: 20px 0 0
+      font-size: 18px
+      li
+        margin-bottom: 20px
+        display: block
+        position: relative
+        padding-left: 20px
+        &:before
+          content: ''
+          display: block
+          background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='11px' height='12px'%3E%3Cpath fill-rule='evenodd' fill='rgb(0, 166, 81)' d='M5.371,11.994 L4.138,10.500 L7.348,7.030 L-0.005,7.030 L0.018,4.956 L7.397,4.956 L4.160,1.427 L5.462,0.006 L10.997,5.972 L5.371,11.994 Z'/%3E%3C/svg%3E")
+          background-repeat: no-repeat
+          width: 11px
+          height: 12px
+          position: absolute
+          left: 0
+          top: 3px
+  &__btn
+    height: 45px
+    width: 260px
+    margin-top: 45px
+
+//news
+.news
+  padding-bottom: 100px
+  &__list
+    border: 1px solid #ebebeb
+    padding: 35px 40px
+    box-sizing: border-box
+    &_item
+      margin-bottom: 25px
+    &_ttl
+      font-family: $semibold, serif
+      font-size: 35px
+      text-transform: uppercase
+      margin-bottom: 25px
+    &_date
+      font-family: $bold, serif
+      line-height: 30px
+    &__caption
+      line-height: 22px
+    &_btn
+      height: 45px
+      width: 100%
+  &__img
+    img
+      width: 100%
+  &__info
+    padding: 30px 30px 40px
+    border: 1px solid #ebebeb
+    border-top: 0
+    box-sizing: border-box
+  &__date
+    font-family: $bold, serif
+    line-height: 30px
+  &__ttl
+    line-height: 22px
+    margin-bottom: 15px
+  &__descr
+    color: #918e8e
+    font-size: 15px
+    line-height: 24px
+
+//partners
+.partners
+  background-color: #fafafa
+  padding-top: 60px
+  padding-bottom: 100px
+  margin-bottom: 90px
+  .left-line:before
+    left: -50px
+    top: 25px
+  .right-line:after
+    right: -50px
+    top: 25px
+
+//feedback
+.feedback
+  padding-bottom: 100px
+  .title
+    font-size: 40px
+  &__btn
+    height: 50px
+    width: 236px
+    &.button_orange
+      color: $white
+  &__checkbox
+    &:focus, &:active
+      outline: none
+      border: 0
+      box-shadow: none
+  .custom-control-label::before
+    width: 20px
+    height: 20px
+    border: 2px solid #ebebeb
+    top: -2px
+  .custom-control-label::after
+    width: 27px
+    height: 27px
+    top: -5px
+    right: 0
+  .custom-checkbox .custom-control-input:checked ~ .custom-control-label::after
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='16px' height='13px'%3E%3Cpath fill-rule='evenodd' fill='rgb(38, 155, 57)' d='M16.002,2.684 L13.280,-0.009 L5.625,7.793 L2.665,4.808 L0.000,7.470 L5.625,13.007 L16.002,2.684 Z'/%3E%3C/svg%3E")
+  .custom-control-input:checked ~ .custom-control-label::before
+    color: #fff
+    border-color: #ebebeb
+    background-color: $white
+  .custom-control-input:focus ~ .custom-control-label::before, .custom-control-input:active ~ .custom-control-label::before
+    box-shadow: none
+
+//footer
+.footer
+  padding-top: 60px
+  padding-bottom: 10px
+  background-color: $black1
+  color: $white
+  position: relative
+  &:after
+    content: ''
+    display: block
+    position: absolute
+    right: 0
+    top: 0
+    background-image: url('../img/footer-bg.png')
+    background-repeat: no-repeat
+    height: 378px
+    width: 676px
+  &__item
+    margin-bottom: 33px
+  &__ttl
+    font-family: $bold, serif
+    text-transform: uppercase
+    margin-bottom: 20px
+  &__link
+    display: block
+    margin-bottom: 15px
+  &__social
+    display: flex
+    align-items: center
+    margin-top: 33px
+    &_link
+      display: flex
+      justify-content: center
+      align-items: center
+      background-color: $green
+      width: 36px
+      height: 35px
+      -webkit-border-radius: 50%
+      -moz-border-radius: 50%
+      border-radius: 50%
+      &:not(:last-child)
+        margin-right: 15px
+  &__phone
+    font-size: 17px
+    font-family: $bold, serif
+    margin-top: 30px
+    padding-left: 20px
+    position: relative
+    &:before
+      content: ''
+      display: block
+      position: absolute
+      left: 0
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='17px' height='16px'%3E%3Cpath fill-rule='evenodd' fill='rgb(38, 155, 57)' d='M16.305,12.627 C16.338,12.887 16.259,13.113 16.067,13.305 L13.815,15.542 C13.713,15.655 13.580,15.751 13.417,15.830 C13.253,15.909 13.092,15.960 12.934,15.983 C12.923,15.983 12.889,15.986 12.832,15.991 C12.776,15.997 12.702,16.000 12.612,16.000 C12.398,16.000 12.050,15.963 11.570,15.890 C11.091,15.816 10.503,15.635 9.809,15.347 C9.114,15.059 8.327,14.627 7.446,14.050 C6.565,13.474 5.628,12.683 4.634,11.678 C3.844,10.898 3.189,10.152 2.669,9.440 C2.150,8.729 1.732,8.070 1.416,7.466 C1.100,6.861 0.863,6.313 0.705,5.822 C0.547,5.330 0.439,4.907 0.383,4.551 C0.326,4.195 0.304,3.915 0.315,3.711 C0.326,3.508 0.332,3.395 0.332,3.373 C0.355,3.215 0.405,3.054 0.484,2.890 C0.563,2.726 0.660,2.593 0.772,2.491 L3.025,0.237 C3.183,0.079 3.364,-0.000 3.567,-0.000 C3.714,-0.000 3.844,0.042 3.957,0.127 C4.070,0.212 4.166,0.316 4.245,0.441 L6.057,3.881 C6.159,4.062 6.187,4.260 6.142,4.475 C6.097,4.689 6.001,4.870 5.854,5.017 L5.024,5.847 C5.001,5.870 4.981,5.906 4.965,5.957 C4.948,6.008 4.939,6.051 4.939,6.084 C4.984,6.322 5.086,6.593 5.244,6.898 C5.380,7.169 5.588,7.500 5.871,7.890 C6.153,8.279 6.554,8.729 7.073,9.237 C7.581,9.757 8.033,10.161 8.428,10.449 C8.824,10.737 9.154,10.949 9.419,11.085 C9.685,11.220 9.888,11.302 10.029,11.330 L10.241,11.373 C10.263,11.373 10.300,11.364 10.351,11.347 C10.402,11.330 10.438,11.311 10.461,11.288 L11.426,10.305 C11.630,10.124 11.867,10.034 12.138,10.034 C12.330,10.034 12.482,10.067 12.595,10.136 L12.612,10.136 L15.881,12.068 C16.118,12.215 16.259,12.401 16.305,12.627 Z'/%3E%3C/svg%3E")
+      background-repeat: no-repeat
+      width: 17px
+      height: 16px
+  &__contacts
+    margin-top: 35px
+    display: flex
+  &__contact
+    font-family: $regular,serif
+    padding-left: 20px
+    position: relative
+    &:before
+      content: ''
+      display: block
+      position: absolute
+      left: 0
+      background-repeat: no-repeat
+  &__adress
+    &:before
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='10px' height='16px'%3E%3Cpath fill-rule='evenodd' fill='rgb(38, 155, 57)' d='M8.542,1.642 C7.597,0.584 6.340,0.001 5.004,0.001 C3.667,0.001 2.411,0.584 1.466,1.642 C-0.284,3.602 -0.501,7.287 0.995,9.521 L5.004,16.006 L9.007,9.530 C10.509,7.287 10.291,3.602 8.542,1.642 Z'/%3E%3C/svg%3E")
+      width: 10px
+      height: 16px
+  &__email
+    &:before
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='16px' height='12px'%3E%3Cpath fill-rule='evenodd' fill='rgb(38, 155, 57)' d='M15.580,11.601 C15.301,11.868 14.964,12.001 14.571,12.001 L1.429,12.001 C1.036,12.001 0.699,11.868 0.420,11.601 C0.140,11.333 -0.000,11.012 -0.000,10.637 L-0.000,3.869 C0.262,4.147 0.562,4.394 0.902,4.610 C3.057,6.008 4.536,6.989 5.339,7.551 C5.678,7.790 5.954,7.976 6.165,8.109 C6.376,8.243 6.658,8.380 7.009,8.519 C7.360,8.658 7.687,8.727 7.991,8.727 L8.000,8.727 L8.009,8.727 C8.313,8.727 8.640,8.658 8.991,8.519 C9.342,8.380 9.623,8.243 9.835,8.109 C10.046,7.976 10.321,7.790 10.661,7.551 C11.672,6.852 13.155,5.872 15.107,4.610 C15.446,4.389 15.744,4.141 16.000,3.869 L16.000,10.637 C16.000,11.012 15.860,11.333 15.580,11.601 ZM14.473,3.698 C12.235,5.181 10.842,6.105 10.295,6.469 C10.235,6.508 10.109,6.595 9.915,6.729 C9.722,6.862 9.561,6.970 9.433,7.053 C9.305,7.135 9.150,7.227 8.969,7.330 C8.787,7.432 8.616,7.508 8.455,7.560 C8.295,7.611 8.146,7.636 8.009,7.636 L8.000,7.636 L7.991,7.636 C7.854,7.636 7.705,7.611 7.544,7.560 C7.384,7.508 7.213,7.432 7.031,7.330 C6.850,7.227 6.695,7.135 6.567,7.053 C6.439,6.970 6.278,6.862 6.085,6.729 C5.891,6.595 5.765,6.508 5.705,6.469 C5.164,6.105 4.384,5.586 3.366,4.913 C2.348,4.239 1.738,3.835 1.536,3.698 C1.167,3.459 0.818,3.131 0.491,2.714 C0.164,2.296 -0.000,1.908 -0.000,1.550 C-0.000,1.107 0.123,0.737 0.370,0.442 C0.617,0.146 0.970,-0.001 1.428,-0.001 L14.571,-0.001 C14.958,-0.001 15.293,0.132 15.576,0.399 C15.858,0.666 16.000,0.987 16.000,1.362 C16.000,1.811 15.854,2.240 15.562,2.649 C15.271,3.059 14.908,3.408 14.473,3.698 Z'/%3E%3C/svg%3E")
+      width: 16px
+      height: 12px
+  &__input
+    width: 100%
+    margin-bottom: 33px
+  &__right
+    margin-left: 25px
+    z-index: 1
+    position: relative
+  &__wr
+    z-index: 1
+
+
+
