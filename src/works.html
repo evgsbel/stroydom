@@ -1,0 +1,450 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>StroyDom - works</title>
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12 d-flex align-items-center justify-content-between">
+                <div class="header__item">
+                    <a href="tel:89179440202" class="header__phone">8 (917) 944-02-02</a>
+                    <a href="#callback" data-fancybox class="header__link">Заказать обратный звонок</a>
+                </div>
+                <div class="header__item">
+                    <div class="header__contacts header__contacts_adress">
+                        ул. Дачная 2а, офис 301
+                    </div>
+                    <a href="mailto:bukinviktor34@ya.ru" class="header__contacts header__contacts_email">bukinviktor34@ya.ru</a>
+                </div>
+                <div class="header__logo">
+                    <a href="/">
+                        <svg width="182" height="125" viewBox="0 0 182 125">
+                            <use xlink:href="#logo"></use>
+                        </svg>
+                    </a>
+                </div>
+                <button class="button button_trnsp header__button header__button_count">Заказать расчет дома</button>
+                <button class="button button_trnsp header__button header__button_calc">Калькулятор</button>
+            </div>
+        </div>
+    </div>
+</header>
+<nav class="nav">
+    <div class="container">
+        <div class="row h-100">
+            <div class="col-xl-12 d-flex">
+                <div class="nav__search">
+                    <svg width="16" height="16" viewBox="0 0 16 16">
+                        <use xlink:href="#icon-search"></use>
+                    </svg>
+                </div>
+                <ul class="nav__wrapper">
+                    <li class="nav__item"><a href="" class="nav__link">Объекты</a></li>
+                    <li class="nav__item"><a href="" class="nav__link">Строительство под ключ</a></li>
+                    <li class="nav__item"><a href="" class="nav__link">Отдельные виды работ</a></li>
+                    <li class="nav__item"><a href="" class="nav__link">Новости</a></li>
+                    <li class="nav__item"><a href="" class="nav__link">Акции</a></li>
+                    <li class="nav__item"><a href="" class="nav__link">Каталог</a></li>
+                    <li class="nav__item"><a href="" class="nav__link">Дизайн и проектирование</a></li>
+                    <li class="nav__item"><a href="" class="nav__link">О нас</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+<section class="breadcrumbs">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12">
+                <ul class="breadcrumbs__wrapper">
+                    <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">Главная</a></li>
+                    <li class="breadcrumbs__separator">/</li>
+                    <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">отдельные виды работ</a></li>
+                    <li class="breadcrumbs__separator">/</li>
+                    <li class="breadcrumbs__item"><span class="breadcrumbs__link breadcrumbs__link_active">Фасадные работы</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="pagetitle">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12 title"><span>Выполненные работы</span></div>
+        </div>
+    </div>
+</section>
+<section class="filter">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="filter__wr">
+                    <div class="filter__top d-flex">
+                        <div class="filter__ttl">Что будем строить?</div>
+                        <button class="button button_orange filter__btn">Дом</button>
+                        <button class="button button_orange filter__btn is-active">Баня</button>
+                        <button class="button button_orange filter__btn">Беседки</button>
+                        <button class="button button_orange filter__btn">Навесы</button>
+                        <button class="button button_orange filter__btn">Ремонт квартир</button>
+                    </div>
+                    <div class="filter__middle d-flex">
+                        <div class="filter__left d-flex">
+                            <div class="filter__item">
+                                <div class="filter__subttl">Спец. предложения</div>
+                                <div class="d-flex custom-control custom-checkbox mb-3">
+                                    <input type="checkbox" class="custom-control-input checkbox" id="customCheck3"
+                                           checked>
+                                    <label class="custom-control-label checkbox_label" for="customCheck3">Хиты
+                                        продаж</label></div>
+                                <div class="d-flex custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input checkbox" id="customCheck4"
+                                           checked>
+                                    <label class="custom-control-label checkbox_label" for="customCheck4">Со
+                                        скидкой</label>
+                                </div>
+                            </div>
+                            <div class="filter__item">
+                                <div class="filter__subttl">Цена</div>
+                                <input type="text" class="filter__input" placeholder="от">
+                                <input type="text" class="filter__input" placeholder="до">
+                            </div>
+                            <div class="filter__item">
+                                <div class="filter__subttl">Площадь</div>
+                                <input type="text" class="filter__input" placeholder="от">
+                                <input type="text" class="filter__input" placeholder="до">
+                            </div>
+                            <div class="filter__item">
+                                <div class="filter__subttl">Этажность</div>
+                                <input type="text" class="filter__input" placeholder="от">
+                                <input type="text" class="filter__input" placeholder="до">
+                            </div>
+                        </div>
+                        <div class="filter__right">
+                            <div class="filter__subttl">Спец. предложения</div>
+                            <div class="d-flex flex-wrap">
+                                <div class="d-flex custom-control custom-checkbox filter__right_item mb-3">
+                                    <input type="checkbox" class="custom-control-input checkbox" id="customCheck5"
+                                           checked>
+                                    <label class="custom-control-label checkbox_label"
+                                           for="customCheck5">Керамблок</label></div>
+                                <div class="d-flex custom-control custom-checkbox filter__right_item">
+                                    <input type="checkbox" class="custom-control-input checkbox" id="customCheck6"
+                                           checked>
+                                    <label class="custom-control-label checkbox_label" for="customCheck6">Силикатный
+                                        кирпич</label>
+                                </div>
+                                <div class="d-flex custom-control custom-checkbox filter__right_item mb-3">
+                                    <input type="checkbox" class="custom-control-input checkbox" id="customCheck7"
+                                           checked>
+                                    <label class="custom-control-label checkbox_label"
+                                           for="customCheck7">Газобетон</label></div>
+                                <div class="d-flex custom-control custom-checkbox filter__right_item">
+                                    <input type="checkbox" class="custom-control-input checkbox" id="customCheck8"
+                                           checked>
+                                    <label class="custom-control-label checkbox_label" for="customCheck8">Клееный
+                                        брус</label>
+                                </div>
+                                <div class="d-flex custom-control custom-checkbox filter__right_item mb-3">
+                                    <input type="checkbox" class="custom-control-input checkbox" id="customCheck9"
+                                           checked>
+                                    <label class="custom-control-label checkbox_label" for="customCheck9">Изоцилиндрованного
+                                        бревна</label></div>
+                                <div class="d-flex custom-control custom-checkbox filter__right_item">
+                                    <input type="checkbox" class="custom-control-input checkbox" id="customCheck10"
+                                           checked>
+                                    <label class="custom-control-label checkbox_label" for="customCheck10">Профилированный
+                                        брус</label>
+                                </div>
+                                <div class="d-flex custom-control custom-checkbox filter__right_item mb-3">
+                                    <input type="checkbox" class="custom-control-input checkbox" id="customCheck11"
+                                           checked>
+                                    <label class="custom-control-label checkbox_label" for="customCheck11">Красный
+                                        кирпич</label></div>
+                                <div class="d-flex custom-control custom-checkbox filter__right_item">
+                                    <input type="checkbox" class="custom-control-input checkbox" id="customCheck12"
+                                           checked>
+                                    <label class="custom-control-label checkbox_label" for="customCheck12">Рубленое в
+                                        ручную бревно</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter__bottom d-flex">
+                        <button class="button button_trnsp filter__btn">Подобрать</button>
+                        <button class="button button_trnsp filter__btn">Сбросить фильтр</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="products-list">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-3 mb-3">
+                <div class="products-list__item">
+                    <div class="products-list__img"><img src="./assets/img/prl-01.png" alt=""></div>
+                    <div class="products-list__hide">
+                        <div class="products-list__name left-line">Загородный <br>дом</div>
+                        <div class="d-flex products-list__properties">
+                            <span>220 м<sup>2</sup></span>
+                            <span>Дерево</span>
+                            <span>14м х 11м</span>
+                        </div>
+                        <a href="" class="products-list__link">12 фото</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 mb-3">
+                <div class="products-list__item">
+                    <div class="products-list__hide">
+                        <div class="products-list__name left-line">Загородный <br>дом</div>
+                        <div class="d-flex products-list__properties">
+                            <span>220 м<sup>2</sup></span>
+                            <span>Дерево</span>
+                            <span>14м х 11м</span>
+                        </div>
+                        <a href="" class="products-list__link">12 фото</a>
+                    </div>
+                    <div class="products-list__img"><img src="./assets/img/prl-02.png" alt=""></div>
+                </div>
+            </div>
+            <div class="col-xl-3 mb-3">
+                <div class="products-list__item">
+                    <div class="products-list__hide">
+                        <div class="products-list__name left-line">Загородный <br>дом</div>
+                        <div class="d-flex products-list__properties">
+                            <span>220 м<sup>2</sup></span>
+                            <span>Дерево</span>
+                            <span>14м х 11м</span>
+                        </div>
+                        <a href="" class="products-list__link">12 фото</a>
+                    </div>
+                    <div class="products-list__img"><img src="./assets/img/prl-03.png" alt=""></div>
+                </div>
+            </div>
+            <div class="col-xl-3 mb-3">
+                <div class="products-list__item">
+                    <div class="products-list__hide">
+                        <div class="products-list__name left-line">Загородный <br>дом</div>
+                        <div class="d-flex products-list__properties">
+                            <span>220 м<sup>2</sup></span>
+                            <span>Дерево</span>
+                            <span>14м х 11м</span>
+                        </div>
+                        <a href="" class="products-list__link">12 фото</a>
+                    </div>
+                    <div class="products-list__img"><img src="./assets/img/prl-04.png" alt=""></div>
+                </div>
+            </div>
+            <div class="col-xl-3 mb-3">
+                <div class="products-list__item">
+                    <div class="products-list__hide">
+                        <div class="products-list__name left-line">Загородный <br>дом</div>
+                        <div class="d-flex products-list__properties">
+                            <span>220 м<sup>2</sup></span>
+                            <span>Дерево</span>
+                            <span>14м х 11м</span>
+                        </div>
+                        <a href="" class="products-list__link">12 фото</a>
+                    </div>
+                    <div class="products-list__img"><img src="./assets/img/prl-05.png" alt=""></div>
+                </div>
+            </div>
+            <div class="col-xl-3 mb-3">
+                <div class="products-list__item">
+                    <div class="products-list__hide">
+                        <div class="products-list__name left-line">Загородный <br>дом</div>
+                        <div class="d-flex products-list__properties">
+                            <span>220 м<sup>2</sup></span>
+                            <span>Дерево</span>
+                            <span>14м х 11м</span>
+                        </div>
+                        <a href="" class="products-list__link">12 фото</a>
+                    </div>
+                    <div class="products-list__img"><img src="./assets/img/prl-06.png" alt=""></div>
+                </div>
+            </div>
+            <div class="col-xl-3 mb-3">
+                <div class="products-list__item">
+                    <div class="products-list__hide">
+                        <div class="products-list__name left-line">Загородный <br>дом</div>
+                        <div class="d-flex products-list__properties">
+                            <span>220 м<sup>2</sup></span>
+                            <span>Дерево</span>
+                            <span>14м х 11м</span>
+                        </div>
+                        <a href="" class="products-list__link">12 фото</a>
+                    </div>
+                    <div class="products-list__img"><img src="./assets/img/prl-01.png" alt=""></div>
+                </div>
+            </div>
+            <div class="col-xl-3 mb-3">
+                <div class="products-list__item">
+                    <div class="products-list__hide">
+                        <div class="products-list__name left-line">Загородный <br>дом</div>
+                        <div class="d-flex products-list__properties">
+                            <span>220 м<sup>2</sup></span>
+                            <span>Дерево</span>
+                            <span>14м х 11м</span>
+                        </div>
+                        <a href="" class="products-list__link">12 фото</a>
+                    </div>
+                    <div class="products-list__img"><img src="./assets/img/prl-08.png" alt=""></div>
+                </div>
+            </div>
+            <div class="col-xl-3 mb-3">
+                <div class="products-list__item">
+                    <div class="products-list__hide">
+                        <div class="products-list__name left-line">Загородный <br>дом</div>
+                        <div class="d-flex products-list__properties">
+                            <span>220 м<sup>2</sup></span>
+                            <span>Дерево</span>
+                            <span>14м х 11м</span>
+                        </div>
+                        <a href="" class="products-list__link">12 фото</a>
+                    </div>
+                    <div class="products-list__img"><img src="./assets/img/prl-09.png" alt=""></div>
+                </div>
+            </div>
+            <div class="col-xl-3 mb-3">
+                <div class="products-list__item">
+                    <div class="products-list__hide">
+                        <div class="products-list__name left-line">Загородный <br>дом</div>
+                        <div class="d-flex products-list__properties">
+                            <span>220 м<sup>2</sup></span>
+                            <span>Дерево</span>
+                            <span>14м х 11м</span>
+                        </div>
+                        <a href="" class="products-list__link">12 фото</a>
+                    </div>
+                    <div class="products-list__img"><img src="./assets/img/prl-010.png" alt=""></div>
+                </div>
+            </div>
+            <div class="col-xl-3 mb-3">
+                <div class="products-list__item">
+                    <div class="products-list__hide">
+                        <div class="products-list__name left-line">Загородный <br>дом</div>
+                        <div class="d-flex products-list__properties">
+                            <span>220 м<sup>2</sup></span>
+                            <span>Дерево</span>
+                            <span>14м х 11м</span>
+                        </div>
+                        <a href="" class="products-list__link">12 фото</a>
+                    </div>
+                    <div class="products-list__img"><img src="./assets/img/prl-011.png" alt=""></div>
+                </div>
+            </div>
+            <div class="col-xl-3 mb-3">
+                <div class="products-list__item">
+                    <div class="products-list__hide">
+                        <div class="products-list__name left-line">Загородный <br>дом</div>
+                        <div class="d-flex products-list__properties">
+                            <span>220 м<sup>2</sup></span>
+                            <span>Дерево</span>
+                            <span>14м х 11м</span>
+                        </div>
+                        <a href="" class="products-list__link">12 фото</a>
+                    </div>
+                    <div class="products-list__img"><img src="./assets/img/prl-012.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-3">
+                <div class="footer__item">
+                    <div class="footer__ttl">Объекты</div>
+                    <a href="/" class="footer__link">Готовые объекты</a>
+                    <a href="/" class="footer__link">Строящиеся объкты</a>
+                </div>
+                <div class="footer__item">
+                    <div class="footer__ttl">Строительство под ключ</div>
+                    <a href="/" class="footer__link">Кирпичные дома</a>
+                    <a href="/" class="footer__link">Деревенные дома</a>
+                    <a href="/" class="footer__link">Бани</a>
+                    <a href="/" class="footer__link">Беседки</a>
+                    <a href="/" class="footer__link">Комплексный ремонт квартир</a>
+                </div>
+            </div>
+            <div class="col-xl-3">
+                <div class="footer__item">
+                    <div class="footer__ttl">Отдельные виды работ</div>
+                    <a href="" class="footer__link">Фасадные работы</a>
+                    <a href="" class="footer__link">Бетонные работы</a>
+                    <a href="" class="footer__link">Кровельные работы</a>
+                    <a href="" class="footer__link">Отделочные работы</a>
+                    <a href="" class="footer__link">Инженерные системы</a>
+                    <a href="" class="footer__link">Дополнительные работы</a>
+                </div>
+                <div class="footer__social">
+                    <a class="footer__social_link" href="/">
+                        <svg width="20" height="11" viewBox="0 0 20 11">
+                            <use xlink:href="#icon-vk"></use>
+                        </svg>
+                    </a>
+                    <a class="footer__social_link" href="/">
+                        <svg width="11" height="21" viewBox="0 0 11 21">
+                            <use xlink:href="#icon-fb"></use>
+                        </svg>
+                    </a>
+                    <a class="footer__social_link" href="/">
+                        <svg width="21" height="16" viewBox="0 0 21 16">
+                            <use xlink:href="#icon-tw"></use>
+                        </svg>
+                    </a>
+                    <a class="footer__social_link" href="/">
+                        <svg width="21" height="20" viewBox="0 0 21 20">
+                            <use xlink:href="#icon-inst"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="d-flex flex-wrap justify-content-between">
+                <div class="footer__wr">
+                    <div class="footer__item">
+                        <a href="" class="footer__ttl">НОВОСТИ</a>
+                    </div>
+                    <div class="footer__item">
+                        <a href="" class="footer__ttl">АКЦИИ</a>
+                    </div>
+                    <div class="footer__item">
+                        <a href="" class="footer__ttl">наши работы</a>
+                    </div>
+                    <div class="footer__item">
+                        <a href="" class="footer__ttl">о нас</a>
+                    </div>
+                    <div class="footer__item">
+                        <a href="" class="footer__ttl">строй. материалы</a>
+                    </div>
+                    <div class="footer__phone">8 (917) 944-02-02</div>
+                </div>
+                <div class="footer__right">
+                    <form action="" class="map__form footer__form">
+                        <input type="search" class="map__input footer__input" placeholder="Поиск по сайту">
+                    </form>
+                    <div class="footer__map"><img src="./assets/img/footer-map.png" alt=""></div>
+                    <div class="footer__contacts ml-3">
+                        <div class="footer__contact footer__adress mr-3">ул. Дачная 2а, офис 301</div>
+                        <div class="footer__contact footer__email">bukinviktor34@ya.ru</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</footer>
+<div id="svg-icons" class="svg-icons"></div>
+</body>
+</html>
